@@ -1,0 +1,28 @@
+1.What are the two types of Intents?
+explicit intent and implicit intent
+
+
+2.Which of the two types of Intents are more secure?
+explicit is more secure, because you can't be certain what service will respond to the intent,
+and the user can't see which service starts when using implicit intent
+
+
+3.What type of Intent is shown on lines 69 to 73 of SecondFragment.kt?
+implicit intent
+
+
+4.What type of Intent is shown on lines 68 to 70 of ThirdFragment.kt?
+explicit intent
+
+
+5.Which of these two Intents is the proper way to do an Intent?
+the explicit intent is a proper way
+
+Fix the incorrect Intent:
+modify secondfragment.kt file
+use explicit intent like this:
+var intent = Intent(activity, ProductScrollingActivity::class.java)
+reason:to avoid using uncertain service which is malicious
+
+2.2
+add android:exported="false" in each activity in AndroidManifest.xml file

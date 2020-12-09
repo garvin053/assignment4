@@ -1,0 +1,9 @@
+why vulnerable:
+I use postman to check input , I found that server only checks
+that whether the Authorization is a valid token , but not check if the Authorization belongs to the
+person who owns this card, so any one can use other's card by using his token with the right card id if
+he just know other card's id(or just try many times on card's id)
+
+how to fix:
+in the server, check if the input Authorization match the card's owner's token,
+only when match ,do the use action
