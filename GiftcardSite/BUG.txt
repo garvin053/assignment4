@@ -6,4 +6,4 @@ he just know other card's id(or just try many times on card's id)
 
 how to fix:
 in the server, check if the input Authorization match the card's owner's token,
-only when match ,do the use action
+only when matched ,do the use action
